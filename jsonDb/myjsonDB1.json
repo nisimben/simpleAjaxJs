@@ -1,0 +1,14 @@
+{
+    "Students":[
+        { "name":"nisim ", "age" : 35},
+        { "name":"dudu ", "age" : 12},
+        { "name":"eli ", "age" : 15},
+        { "name":"arik ", "age" : 17}
+    ],
+    "Animals":[
+        { "name":"tiger", "age" : 35},
+        { "name":"lion", "age" : 12},
+        { "name":"fox", "age" : 15},
+        { "name":"dog", "age" : 17}
+    ]
+}

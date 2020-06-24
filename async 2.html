@@ -1,0 +1,54 @@
+
+
+<style>
+	.wrap{
+		width: 70%; margin: auto; display: flex;
+	}
+	.txt{background-color: orange;}
+	.js{background-color: orchid;}
+	.json{background-color: goldenrod;}
+	.html{background-color: violet;}
+</style>
+
+<h1>my async!</h1>
+
+
+<div class="wrap">
+	<div class="txt">
+	</div>	
+	<div class="js">
+	</div>
+	<div class="json">
+	</div>
+	<div class="html">
+	</div>
+</div>
+
+<script>
+	let jsonArr =[
+		
+	]
+
+	function loadDoc(url, targetEl){
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				targetEl.innerHTML = this.responseText;
+				//jsonResults = JSON.parse(this.responseText)
+				//for on jsonResults.students
+				//redner to html <li>
+			}
+		};
+		xhttp.open("GET", url);
+		xhttp.send();
+	}
+
+	smartLoadDoc(
+		"https://raw.githubusercontent.com/bresleveloper/db/master/ajax/someDB.json", 
+		document.querySelector(".json"))
+
+	smartLoadDoc(
+		"https://raw.githubusercontent.com/bresleveloper/db/master/ajax/someDB.js", 
+		document.querySelector(".js"))
+
+</script>

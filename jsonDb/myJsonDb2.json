@@ -1,0 +1,14 @@
+{
+    "Teachers":[
+        { "name":"ariel ", "age" : 35},
+        { "name":"asaf ", "age" : 12},
+        { "name":"david ", "age" : 15},
+        { "name":"aharon ", "age" : 17}
+    ],
+    "Cars":[
+        { "name":"subaro", "age" : 35},
+        { "name":"mazda", "age" : 12},
+        { "name":"lmburgini", "age" : 15},
+        { "name":"doge", "age" : 17}
+    ]
+}
